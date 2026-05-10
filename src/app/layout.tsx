@@ -7,11 +7,6 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { SceneWrapper } from "@/components/canvas/scene-wrapper";
 
-import { Hero } from "@/components/hero"
-import { About } from "@/components/about"
-
-
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -47,8 +42,7 @@ export default function RootLayout({
               <SceneWrapper />
             </div>
 
-            <Navbar hero={<Hero />}
-              about={<About />} />
+            <Navbar />
             <main className="flex-1 w-full flex flex-col relative z-0">
               {children}
             </main>

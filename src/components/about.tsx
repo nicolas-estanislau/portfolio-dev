@@ -33,7 +33,7 @@ export function About() {
                 Olá! Meu nome é Nicolas Estanislau.
               </p>
               <p>
-                Uma das minhas atividades favoritas no tempo livre (além de andar de skate) é construir novas arquiteturas para me desafiar com novos padrões de desenvolvimento. Além disso, um dos meus hobbies é aprender novas tecnologias, por exemplo, no momento estou bastante interessado em Ruby on Rails.
+                Uma das minhas atividades é construir novas arquiteturas para me desafiar com novos padrões de desenvolvimento. Além disso, um dos meus hobbies é aprender novas tecnologias, por exemplo, no momento estou bastante interessado em Ruby on Rails.
               </p>
               <p>
                 Nos últimos anos, também tenho me interessado em aprender novas linguagens e culturas.

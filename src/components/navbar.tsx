@@ -5,21 +5,8 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
-import { useState, type ReactNode } from "react";
 
-type Section = "hero" | "about";
-
-const tabs: { id: Section; label: string }[] = [
-  { id: "hero", label: "Nicolas" },
-  { id: "about", label: "About" }
-];
-
-interface Props {
-  hero: ReactNode;
-  about: ReactNode;
-}
-export function Navbar({ hero, about }: Props) {
-  //const [active, setActive] = useState<Section>("hero");
+export function Navbar() {
 
   const { setTheme, theme } = useTheme()
 
@@ -27,7 +14,7 @@ export function Navbar({ hero, about }: Props) {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between mx-auto px-4">
         <div className="flex items-center gap-6">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="#home" className="flex items-center space-x-2">
             <span className="font-bold text-xl tracking-tight">Nicolas</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">

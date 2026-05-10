@@ -30,7 +30,7 @@ const itemVariants: Variants = {
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col justify-center min-h-[calc(100vh-4rem)] container mx-auto px-4 z-10 pointer-events-none">
+    <section id="home" className="relative flex flex-col justify-center min-h-[calc(100vh-4rem)] container mx-auto px-4 z-10 pointer-events-none">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -58,7 +58,7 @@ export function Hero() {
         <motion.div variants={itemVariants}>
           <div className="backdrop-blur-md bg-background/30 border border-border/50 p-6 rounded-2xl shadow-xl max-w-xl mb-10">
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Sou engenheiro de software com 3 anos de experiência na função, meu foco sempre foi no desenvolvimento com (MERN) MongoDB, Express.js, React.js e Node.js mas também possuo experiência em MySql, arquitetura backend e clean code.
+              Sou engenheiro de software, meu foco sempre foi no desenvolvimento web utilizando Next.js, React e TypeScript, atuando de forma fullstack na construção de interfaces e integração com APIs.
             </p>
           </div>
         </motion.div>
