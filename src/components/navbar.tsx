@@ -19,7 +19,7 @@ interface Props {
   about: ReactNode;
 }
 export function Navbar({ hero, about }: Props) {
-  const [active, setActive] = useState<Section>("hero");
+  //const [active, setActive] = useState<Section>("hero");
 
   const { setTheme, theme } = useTheme()
 
