@@ -7,6 +7,11 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { SceneWrapper } from "@/components/canvas/scene-wrapper";
 
+import { Hero } from "@/components/hero"
+import { About } from "@/components/about"
+
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,8 +23,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nicolas Estanislau | Full Stack Developer",
-  description: "Portfolio of Nicolas Estanislau, an award-winning Full Stack Developer.",
+  title: "Nicolas Estanislau",
+  description: "Portfolio of Nicolas Estanislau",
 };
 
 export default function RootLayout({
@@ -42,7 +47,8 @@ export default function RootLayout({
               <SceneWrapper />
             </div>
 
-            <Navbar />
+            <Navbar hero={<Hero />}
+              about={<About />} />
             <main className="flex-1 w-full flex flex-col relative z-0">
               {children}
             </main>

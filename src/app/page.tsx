@@ -7,9 +7,9 @@ export default function Home() {
       <Hero />
       <About />
       {/* Future sections will go here */}
-      <section id="projects" className="h-screen" />
-      <section id="experience" className="h-screen" />
-      <section id="contact" className="h-screen" />
+      {/* <section id="projects" className="h-screen" /> */}
+      {/* <section id="experience" className="h-screen" /> */}
+      {/* <section id="contact" className="h-screen" /> */}
     </div>
   )
 }

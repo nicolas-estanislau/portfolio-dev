@@ -1,13 +1,26 @@
 "use client"
 
-import * as React from "react"
 import Link from "next/link"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
+import { useState, type ReactNode } from "react";
 
-export function Navbar() {
+type Section = "hero" | "about";
+
+const tabs: { id: Section; label: string }[] = [
+  { id: "hero", label: "Nicolas" },
+  { id: "about", label: "About" }
+];
+
+interface Props {
+  hero: ReactNode;
+  about: ReactNode;
+}
+export function Navbar({ hero, about }: Props) {
+  const [active, setActive] = useState<Section>("hero");
+
   const { setTheme, theme } = useTheme()
 
   return (
@@ -19,9 +32,9 @@ export function Navbar() {
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             <Link href="#about" className="transition-colors hover:text-foreground/80 text-foreground/60">About</Link>
-            <Link href="#projects" className="transition-colors hover:text-foreground/80 text-foreground/60">Projects</Link>
-            <Link href="#experience" className="transition-colors hover:text-foreground/80 text-foreground/60">Experience</Link>
-            <Link href="#contact" className="transition-colors hover:text-foreground/80 text-foreground/60">Contact</Link>
+            {/* <Link href="#projects" className="transition-colors hover:text-foreground/80 text-foreground/60">Projects</Link> */}
+            {/* <Link href="#experience" className="transition-colors hover:text-foreground/80 text-foreground/60">Experience</Link> */}
+            {/* <Link href="#contact" className="transition-colors hover:text-foreground/80 text-foreground/60">Contact</Link> */}
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">

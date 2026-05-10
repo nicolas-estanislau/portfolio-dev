@@ -42,34 +42,34 @@ export function Hero() {
             Hi, my name is
           </h2>
         </motion.div>
-        
+
         <motion.div variants={itemVariants}>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 text-foreground">
             Nicolas Estanislau.
           </h1>
         </motion.div>
-        
+
         <motion.div variants={itemVariants}>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 text-muted-foreground">
-            I build digital experiences.
+            I do code.
           </h1>
         </motion.div>
-        
+
         <motion.div variants={itemVariants}>
           <div className="backdrop-blur-md bg-background/30 border border-border/50 p-6 rounded-2xl shadow-xl max-w-xl mb-10">
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I'm a Full Stack Developer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products using modern web technologies.
+              Sou engenheiro de software com 3 anos de experiência na função, meu foco sempre foi no desenvolvimento com (MERN) MongoDB, Express.js, React.js e Node.js mas também possuo experiência em MySql, arquitetura backend e clean code.
             </p>
           </div>
         </motion.div>
 
         <motion.div variants={itemVariants} className="flex gap-4">
-          <Link href="#projects" className={cn(buttonVariants({ size: "lg" }), "rounded-full shadow-lg")}>
+          {/* <Link href="#projects" className={cn(buttonVariants({ size: "lg" }), "rounded-full shadow-lg")}>
             View Projects
           </Link>
           <Link href="#contact" className={cn(buttonVariants({ size: "lg", variant: "outline" }), "rounded-full backdrop-blur-sm bg-background/50")}>
             Contact Me
-          </Link>
+          </Link> */}
         </motion.div>
       </motion.div>
     </section>
