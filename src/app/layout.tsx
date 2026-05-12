@@ -7,6 +7,9 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { SceneWrapper } from "@/components/canvas/scene-wrapper";
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -49,6 +52,8 @@ export default function RootLayout({
             <Footer />
           </LenisProvider>
         </ThemeProvider>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
