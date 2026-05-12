@@ -8,7 +8,7 @@ const SKILLS = [
   "Next.js",
   "Node.js",
   "Tailwind CSS",
-  "PostgreSQL",
+  "MySQL",
 ]
 
 export function About() {
